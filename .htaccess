@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# Redirect Terminbuchungs.html to Terminbuchung.php
+RewriteRule ^Terminbuchungs\.html$ /Terminbuchung.php [R=301,L]
+
+# Redirect index.html to root URL
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Redirect about.html to Team.php
+RewriteRule ^about\.html$ /Team.php [R=301,L]
+
+# Redirect about.php/ to Team.php
+RewriteRule ^about\.php/$ /Team.php [R=301,L]
+
+# Redirect R-Tutorial.php to root URL
+RewriteRule ^R-Tutorial\.php$ / [R=301,L]
+
+# Redirect beratung.php to root URL
+RewriteRule ^beratung\.php$ / [R=301,L]
+
+# Redirect any other .html to .php
+RewriteRule ^(.+)\.html$ /$1.php [R=301,L]
