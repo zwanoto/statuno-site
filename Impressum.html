@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="title" content="Impressum - Statuno - Statistik Beratung und Nachhilfe">
+        <meta name="description" content="Erfahren Sie mehr über das Impressum von Statuno, einem Anbieter professioneller Statistik-Beratung und Statistik-Nachhilfe. Kontaktieren Sie uns für Bachelor-, Master- und Doktorarbeiten, Übungsaufgaben und Prüfungsvorbereitungen.">        <meta name="author" content="Thomas Zwanowetz">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+      
+        <title>Statistik-Beratung Impressum</title>
+      
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+        <link rel="stylesheet" href="assets/css/animated.css">
+        <link rel="stylesheet" href="assets/css/owl.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="canonical" href="https://statuno.com/Impressum.php">
+
+      <?php
+$visitors = file_get_contents('counter.txt');
+$visitors = $visitors + 1;
+file_put_contents('counter.txt', $visitors);
+?>
+      </head>
+      
+      <body>
+      
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        font-size: 16px;
+        color: #333;
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+
+ 
+</style>
+       
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.php" class="logo">
+            <a href="https://www.statuno.com/" class="logo">
+              <h4>Statuno </h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="Team.php" >Team</a></li> 
+              <li class="scroll-to-section"><a href="Preise.php">Preise </a></li> 
+ 
+               <li class="scroll-to-section"><a href="Referenzen.php">Referenzen </a></li> 
+               <li class="scroll-to-section"><a href="Impressum.php">Impressum/Datenschutz </a></li>
+               <li class="scroll-to-section"><a href="Kontakt.php">Jetzt Anfragen</a></li> 
+               <li class="scroll-to-section"><a href="en/Legal.php"><strong> EN </strong> </a></li> 
+
+               <li class="main-blue-button"><a href="Terminbuchung.php">Terminbuchung </a></li> 
+ 
+             </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+ 
+  
+  <body style="background-color: lightblue; margin-top:100px">
+    <br>
+    <h2 style="text-align: center;">Impressum, Datenschutzerklärung und Allgemeine Geschäftsbedingungen </h2>
+    <br>
+    <section class="impressum-section section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="impressum-box">
+                        <h2 class="section-title text-center">Impressum</h2>
+                        <br>
+                        <p>
+                            <strong>Dipl.Ing.Thomas Zwanowetz - Statistik Beratung</strong> <br>
+                            Josef Meng-Str. 11/13 <br>
+                            A-6330 Kufstein <br>
+                            Telefon: +43 681 108 69543 <br>
+                            E-Mail: zwanowetzth@gmail.com <br>
+                            UID: ATU77098169
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="datenschutz-section section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="datenschutz-box">
+                        <h2 class="section-title text-center">Datenschutzerklärung</h2>
+                        <br>
+                        <p>
+
+                            <p>Vielen Dank, dass Sie unsere Website besuchen. Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Nachfolgend möchten wir Sie über die Erhebung und Verarbeitung Ihrer Daten informieren.</p>
+                        
+                            <h3>Verantwortliche Stelle</h3>
+                            <ul>
+                                <li>Dipl.Ing. Thomas Zwanowetz</li>
+                                <li>Josef Meng-Str. 11/13, A-6330 Kufstein  </li>
+                                <li>Telefon: +43 681 108 69543</li>
+                            </ul>
+                            <br>
+                            <h3>Erhebung und Verarbeitung von Daten</h3>
+                            <ul>
+                                <li>Automatisch erhobene Daten: Bei jedem Besuch unserer Website werden automatisch technische Informationen erfasst, wie beispielsweise Ihre (anonymisierte) IP-Adresse, der verwendete Browser, das Betriebssystem, die Uhrzeit der Serveranfrage und ähnliche Daten.</li>
+                                <li>Kontaktaufnahme: Wenn Sie uns kontaktieren, beispielsweise per E-Mail, werden die von Ihnen freiwillig bereitgestellten Daten (z. B. Name, E-Mail-Adresse, Telefonnummer) zum Zweck der Bearbeitung Ihrer Anfrage gespeichert.</li>
+                            </ul>
+                            <br>
+                            <h3>Zweck der Datenverarbeitung</h3>
+                            <p>Die erhobenen Daten dienen dazu, die Funktion unserer Website sicherzustellen, statistische Auswertungen durchzuführen und den Austausch von Informationen mit Ihnen zu ermöglichen. Die Verarbeitung erfolgt zur Erfüllung unserer berechtigten Interessen, insbesondere zur Verbesserung unseres Angebots und der Website.</p>
+                        
+                            <h3>Rechtsgrundlage der Verarbeitung</h3>
+                            <p>Die Verarbeitung Ihrer personenbezogenen Daten erfolgt aufgrund unseres berechtigten Interesses (Art. 6 Abs. 1 lit. f) DSGVO), die im vorgenannten Zweck der Datenverarbeitung liegen.</p>
+                            <br>              
+                            <h3>Speicherung der Daten</h3>
+                            <p>Die von uns erhobenen Daten werden für den Zeitraum gespeichert, der zur Erfüllung der genannten Zwecke erforderlich ist. Es besteht jedoch die Möglichkeit, dass die Daten im Falle einer rechtlichen Verpflichtung länger gespeichert werden müssen.</p>
+                            <br>
+                            <h3>Datenübermittlung an Dritte</h3>
+                            <p>Wir übermitteln Ihre Daten nicht an Dritte, es sei denn, dies ist zur Erfüllung unserer vertraglichen oder gesetzlichen Verpflichtungen erforderlich. Dabei stellen wir sicher, dass angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer Daten getroffen werden.</p>
+                            <br>
+                            <h3>Ihre Rechte</h3>
+                            <p>Sie haben das Recht, Auskunft über die Verarbeitung Ihrer personenbezogenen Daten zu erhalten, deren Berichtigung oder Löschung zu verlangen, die Verarbeitung einzuschränken, der Verarbeitung zu widersprechen und das Recht auf Datenübertragbarkeit auszuüben. Bitte kontaktieren Sie uns dazu über die angegebenen Kontaktdaten.</p>
+                            <br>
+                            <h3>Änderungen der Datenschutzerklärung</h3>
+                            <p>Wir behalten uns das Recht vor, diese Datenschutzerklärung anzupassen. Die jeweils aktuelle Version finden Sie auf unserer Website.</p>
+                            
+                            <p>Bitte beachten Sie, dass diese Datenschutzerklärung eine allgemeine Übersicht darstellt. Für detailliertere Informationen und spezifische Angaben verweisen wir auf unsere vollständige Datenschutzerklärung auf unserer Website.</p>
+                                                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="datenschutz-section section-padding" style="margin-bottom:50px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="datenschutz-box">
+                        <h2 class="section-title text-center">Allgemeine Geschaeftsbedingungen</h2>
+                        <br>
+<html>
+  
+  <h3>1. Geltungsbereich</h3>
+  <p>
+    Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für sämtliche Leistungen und Verträge im Bereich der Statistik-Beratung zwischen uns und dem Kunden, sofern nichts Abweichendes schriftlich vereinbart wurde.<br>
+    Abweichende oder ergänzende Bedingungen des Kunden werden nur dann Vertragsbestandteil, wenn sie von uns ausdrücklich und schriftlich anerkannt werden.
+  </p>
+
+  <h3>2. Leistungen</h3>
+  <p>
+    Wir bieten Statistik-Beratungsdienstleistungen in den Bereichen Datenanalyse, statistische Modellierung, Interpretation von statistischen Ergebnissen und ähnlichen Leistungen an.<br>
+    Die konkreten Leistungen, der Umfang sowie die Modalitäten werden in einem separaten Angebot oder Vertrag festgelegt.<br>
+    Wir erbringen die Leistungen nach bestem Wissen und Gewissen sowie unter Beachtung der anerkannten Standards und Methoden der Statistik-Beratung.
+  </p>
+
+  <h3>3. Vertragsabschluss</h3>
+  <p>
+    Ein Vertrag kommt durch die schriftliche Annahme des Angebots von uns durch den Kunden zustande.<br>
+    Die Annahme kann auch durch die tatsächliche Inanspruchnahme der Leistungen erfolgen, etwa das Buchen von Beratungsterminen.
+  </p>
+
+  <h3>4. Vergütung und Zahlungsbedingungen</h3>
+  <p>
+    Die Vergütung für die Leistungen wird in dem separaten Angebot oder Vertrag festgelegt.<br>
+    Sofern nichts anderes vereinbart ist, sind die Zahlungen innerhalb von 60 Tagen nach Erhalt der Rechnung ohne Abzug fällig.<br>
+    Bei Zahlungsverzug sind wir berechtigt, Verzugszinsen in gesetzlicher Höhe zu verlangen.
+  </p>
+
+  <h3>5. Haftung und Gewährleistung</h3>
+  <p>
+    Wir haften für Schäden nur bei Vorsatz oder grober Fahrlässigkeit. Die Haftung für leichte Fahrlässigkeit ist ausgeschlossen, sofern keine Verletzung wesentlicher Vertragspflichten vorliegt.<br>
+    Für die Richtigkeit und Vollständigkeit der Daten und Informationen, die vom Kunden zur Verfügung gestellt werden, übernehmen wir keine Gewährleistung.<br>
+    Wir haften nicht für die Verwendung und Interpretation der statistischen Ergebnisse durch den Kunden oder Dritte.
+  </p>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .impressum-box,
+        .datenschutz-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+    
+
+
+ 
+    <footer style="background-color: #313232;color:white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p  style="color:whitesmoke">Copyright © 2021 Thomas Zwanowetz. 
+              
+              <br>Web Designed by <a rel="nofollow" href="https://templatemo.com" title="free CSS templates">TemplateMo</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+
+ <script src="vendor/jquery/jquery.min.js"></script>  
+<!--  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<script src="assets/js/owl-carousel.js"></script> 
+ <!--  <script src="assets/js/animation.js"></script>  -->
+  <!--  <script src="assets/js/imagesloaded.js"></script>    -->
+    <script src="assets/js/custom.js"></script>  
+</html>
