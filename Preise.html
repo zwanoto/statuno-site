@@ -26,6 +26,7 @@
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
+      border-collapse: collapse;
     }
 
     @media (min-width: 576px) {
@@ -37,23 +38,37 @@
     table.table-container th,
     table.table-container td {
       font-size: 14px;
-    }
-
-    form#contact button:hover {
-      background-color: #4771cb !important;
-      color: #fff !important;
-      border-bottom: 2px solid black !important;
-    }
-
-    .framework {
-      background-color: white;
-      border: 1px solid #0069FF;
-      border-radius: 0px;
-      color: blueblack;
+      padding: 10px;
       text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    tr.highlight-row {
+      background-color: #e8f4ff;
+      font-weight: bold;
+    }
+
+    .label {
+      display: inline-block;
+      font-size: 12px;
+      background-color: #28a745;
+      color: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 8px;
+    }
+
+    .package-label {
+      font-size: 13px;
+      font-weight: bold;
+      color: #0069d9;
+    }
+
+    p.info-text {
+      text-align: center;
+      font-size: 14px;
       margin-top: 10px;
-      width: 100%;
-      padding: 5px;
+      color: #444;
     }
   </style>
 </head>
@@ -112,9 +127,9 @@
         <td>45 min</td>
         <td>59 Euro</td>
       </tr>
-      <tr style="background-color: #e8f4ff;">
-        <td><strong>60 min</strong></td>
-        <td><strong>75 Euro</strong></td>
+      <tr class="highlight-row">
+        <td>60 min <span class="label">Beliebteste Wahl</span></td>
+        <td>75 Euro</td>
       </tr>
       <tr>
         <td>1.5 h</td>
@@ -130,7 +145,7 @@
       </tr>
     </table>
 
-    <p style="text-align: center; font-size: 14px; margin-top: -20px; color: #444;">
+    <p class="info-text">
       Alle Preise gelten unabhängig von der gewählten Zahlungsmethode. Zahlung via Paypal, Kreditkarte oder SEPA-Überweisung möglich.
     </p>
 
@@ -139,12 +154,12 @@
     <div class="price-table">
       <table class='table-container' style="background-color: white; margin-bottom: 50px;">
         <tr>
-          <td>5h Paket (–10 €/h)</td>
+          <td>5h Paket <span class="package-label">–10 €/h</span></td>
           <td><strong>325 Euro</strong></td>
         </tr>
-        <tr>
-          <td>10h Paket (–15 €/h)</td>
-          <td><strong>600 Euro</strong></td>
+        <tr style="background-color: #e8f4ff; font-weight: bold;">
+          <td>10h Paket <span class="package-label">–15 €/h</span> <span class="label">Top-Preis-Leistung</span></td>
+          <td>600 Euro</td>
         </tr>
       </table>
     </div>
