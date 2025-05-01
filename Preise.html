@@ -70,6 +70,13 @@
       margin-top: 10px;
       color: #444;
     }
+
+    @media (max-width: 500px) {
+      p.info-text {
+        font-size: 13px;
+        padding: 0 10px;
+      }
+    }
   </style>
 </head>
 
@@ -149,10 +156,11 @@
       Alle Preise gelten unabhängig von der gewählten Zahlungsmethode. Zahlung via Paypal, Kreditkarte oder SEPA-Überweisung möglich.
     </p>
 
-    <h2 style="text-align: center; margin-top: 40px;"><strong>Paketpreise</strong></h2>
+    <hr style="width: 60%; margin: 40px auto;">
+    <h2 style="text-align: center; margin-top: 20px;"><strong>Paketpreise</strong></h2>
     <br>
     <div class="price-table">
-      <table class='table-container' style="background-color: white; margin-bottom: 50px;">
+      <table class='table-container' style="background-color: white; margin-bottom: 10px;">
         <tr>
           <td>5h Paket <span class="package-label">–10 €/h</span></td>
           <td><strong>325 Euro</strong></td>
@@ -163,6 +171,10 @@
         </tr>
       </table>
     </div>
+
+    <p class="info-text">
+      Ideal für Abschlussarbeiten, regelmäßige Betreuung oder datenintensive Projekte.
+    </p>
   </div>
 
   <footer style="background-color: #313232;color:white">
