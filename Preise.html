@@ -21,12 +21,21 @@
   <link rel="canonical" href="https://statuno.com/Preise.html">
 
   <style>
+    body {
+      background-color: white;
+      font-family: 'Open Sans', sans-serif;
+    }
+
     table.table-container {
       width: 90%;
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
       border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      background-color: white;
     }
 
     @media (min-width: 576px) {
@@ -37,10 +46,15 @@
 
     table.table-container th,
     table.table-container td {
-      font-size: 14px;
-      padding: 10px;
-      text-align: center;
-      border: 1px solid #ddd;
+      font-size: 15px;
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    table.table-container th {
+      background-color: #f5f5f5;
+      font-weight: 700;
     }
 
     tr.highlight-row {
@@ -62,25 +76,42 @@
       font-size: 13px;
       font-weight: bold;
       color: #0069d9;
+      margin-left: 6px;
     }
 
-    p.info-text {
+    .info-text {
       text-align: center;
       font-size: 14px;
-      margin-top: 10px;
+      margin-top: 14px;
       color: #444;
     }
 
+    .section-divider {
+      width: 60%;
+      max-width: 600px;
+      margin: 60px auto 40px;
+      border: none;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
     @media (max-width: 500px) {
-      p.info-text {
+      .info-text {
         font-size: 13px;
         padding: 0 10px;
       }
     }
   </style>
+
 </head>
 
-<body style="background-color:lightblue">
+<body style="background-color:white">
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
@@ -116,65 +147,65 @@
       </div>
     </div>
 
-    <table class="table-container" style="background-color: white;">
-      <tr style="background-color:#f5f5f5">
-        <th>Zeitdauer</th>
-        <th>Preis</th>
-      </tr>
-      <tr>
-        <td>Erstgespräch 15 min</td>
-        <td>0 Euro</td>
-      </tr>
-      <tr>
-        <td>30 min</td>
-        <td>42 Euro</td>
-      </tr>
-      <tr>
-        <td>45 min</td>
-        <td>59 Euro</td>
-      </tr>
-      <tr class="highlight-row">
-        <td>60 min <span class="label">Beliebteste Wahl</span></td>
-        <td>75 Euro</td>
-      </tr>
-      <tr>
-        <td>1.5 h</td>
-        <td>109 Euro</td>
-      </tr>
-      <tr>
-        <td>2 h</td>
-        <td>139 Euro</td>
-      </tr>
-      <tr>
-        <td>3 h</td>
-        <td>199 Euro</td>
-      </tr>
-    </table>
+<!-- Preisübersicht -->
+<table class="table-container">
+  <tr>
+    <th>Zeitdauer</th>
+    <th>Preis</th>
+  </tr>
+  <tr>
+    <td>Erstgespräch 15 min</td>
+    <td>0 Euro</td>
+  </tr>
+  <tr>
+    <td>30 min</td>
+    <td>42 Euro</td>
+  </tr>
+  <tr>
+    <td>45 min</td>
+    <td>59 Euro</td>
+  </tr>
+  <tr class="highlight-row">
+    <td>60 min <span class="label">Beliebteste Wahl</span></td>
+    <td>75 Euro</td>
+  </tr>
+  <tr>
+    <td>1.5 h</td>
+    <td>109 Euro</td>
+  </tr>
+  <tr>
+    <td>2 h</td>
+    <td>139 Euro</td>
+  </tr>
+  <tr>
+    <td>3 h</td>
+    <td>199 Euro</td>
+  </tr>
+</table>
 
-    <p class="info-text">
-      Alle Preise gelten unabhängig von der gewählten Zahlungsmethode. Zahlung via Paypal, Kreditkarte oder SEPA-Überweisung möglich.
-    </p>
+<p class="info-text">
+  Alle Preise gelten unabhängig von der gewählten Zahlungsmethode. Zahlung via Paypal, Kreditkarte oder SEPA-Überweisung möglich.
+</p>
 
-    <hr style="width: 60%; margin: 40px auto;">
-    <h2 style="text-align: center; margin-top: 20px;"><strong>Paketpreise</strong></h2>
-    <br>
-    <div class="price-table">
-      <table class='table-container' style="background-color: white; margin-bottom: 10px;">
-        <tr>
-          <td>5h Paket <span class="package-label">–10 €/h</span></td>
-          <td><strong>325 Euro</strong></td>
-        </tr>
-        <tr style="background-color: #e8f4ff; font-weight: bold;">
-          <td>10h Paket <span class="package-label">–15 €/h</span> <span class="label">Top-Preis-Leistung</span></td>
-          <td>600 Euro</td>
-        </tr>
-      </table>
-    </div>
+<hr class="section-divider">
+<h2 class="section-title">Paketpreise</h2>
 
-    <p class="info-text">
-      Ideal für Abschlussarbeiten, regelmäßige Betreuung oder datenintensive Projekte.
-    </p>
-  </div>
+<div class="price-table">
+  <table class='table-container' style="margin-bottom: 10px;">
+    <tr>
+      <td>5h Paket <span class="package-label">–10 €/h</span></td>
+      <td><strong>325 Euro</strong></td>
+    </tr>
+    <tr class="highlight-row">
+      <td>10h Paket <span class="package-label">–15 €/h</span> <span class="label">Top-Preis-Leistung</span></td>
+      <td><strong>600 Euro</strong></td>
+    </tr>
+  </table>
+</div>
+
+<p class="info-text">
+  Ideal für Abschlussarbeiten, regelmäßige Betreuung oder datenintensive Projekte.
+</p>
 
   <footer style="background-color: #313232;color:white">
     <div class="container">
