@@ -47,7 +47,7 @@ https://templatemo.com/tm-563-seo-dream
     }
     .framework {
       background-color: white;
-      border: 1px solid #0069FF;
+      border: 1px solid #0059FF;
       border-radius: 0px;
       color: blueblack;
       text-align: center;
@@ -187,8 +187,8 @@ https://templatemo.com/tm-563-seo-dream
       <div>
         <h4>Zahlungsmethode</h4>
         <select id="framework2" onchange="updatePayment()" style="display:flex">
-          <option value="1">Paypal (-10%)</option>
-          <option value="2">Kreditkarte (-10%)</option>
+          <option value="1">Paypal </option>
+          <option value="2">Kreditkarte </option>
           <option value="3">Später zahlen</option>
         </select>
       </div>
@@ -345,7 +345,7 @@ selectedValue_ = selectedValue
       selectValue = "7"}
     price = 199; // 3 h - 249 Euros
   }
-if (paymentValue == "3"){factor = 1.11;}
+if (paymentValue == "3"){factor = 1.00;}
 else {factor = 1.00;}
 var price_ = Math.round(price * factor);
   document.getElementById("selectedTime").innerHTML = price_ + " Euro";
@@ -388,7 +388,7 @@ if (selectedValue === "1") {
       selectValue = "14"}
     else if (paymentValue == "3"){
       selectValue = "2"}
-    price = 48; // 30 min - 75 Euro
+    price = 42; // 30 min - 75 Euro
   } else if (selectedValue === "3") {
     if (paymentValue == "1"){
       selectValue = "9"}
@@ -396,7 +396,7 @@ if (selectedValue === "1") {
       selectValue = "15"}
     else if (paymentValue == "3"){
       selectValue = "3"}
-    price = 69; // 45 min - 75 Euros
+    price = 59; // 45 min - 75 Euros
   } else if (selectedValue === "4") {
     if (paymentValue == "1"){
       selectValue = "10"}
@@ -412,7 +412,7 @@ if (selectedValue === "1") {
       selectValue = "17"}
     else if (paymentValue == "3"){
       selectValue = "5"}
-    price = 129; // 1.5 h - 149 Euros
+    price = 109; // 1.5 h - 149 Euros
   } else if (selectedValue === "6") {
     if (paymentValue == "1"){
       selectValue = "12"}
@@ -420,7 +420,7 @@ if (selectedValue === "1") {
       selectValue = "18"}
     else if (paymentValue == "3"){
       selectValue = "6"}
-    price = 169; // 2 h - 199 Euros
+    price = 139; // 2 h - 199 Euros
   } else if (selectedValue === "7") {
     if (paymentValue == "1"){
       selectValue = "13"}
@@ -428,9 +428,9 @@ if (selectedValue === "1") {
       selectValue = "19"}
     else if (paymentValue == "3"){
       selectValue = "7"}
-    price = 245; // 3 h - 249 Euros
+    price = 199; // 3 h - 249 Euros
   }
-    if (paymentValue =="3"){factor = 1.11}
+    if (paymentValue =="3"){factor = 1.00}
     else {factor = 1.00;}
 
       var price_ = Math.round(price * factor);
