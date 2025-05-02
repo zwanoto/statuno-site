@@ -3836,7 +3836,7 @@ Created using IcoMoon - icomoon.io
     top: 0;
     content: ""; }
   .page-header:before {
-    background-color: lightblue;
+    background-color: white;
   color: black }
   .page-header[filter-color="orange"] {
     background: rgba(44, 44, 44, 0.2);
