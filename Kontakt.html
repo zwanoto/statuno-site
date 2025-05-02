@@ -34,42 +34,36 @@ https://templatemo.com/tm-563-seo-dream
 -->
 
 </head>
-
 <style>
-    .big-calendar-icon {
-      font-size: 100px;
-    }
-    <style>
-    form#contact button:hover {
-      background-color: #4771cb!important;
-      color: #fff!important;
-      border-bottom: 2px solid black!important;
-    }
-    .framework {
-      background-color: white;
-      border: 1px solid #0069FF;
-      border-radius: 0px;
-      color: blueblack;
-      text-align: center;
-      margin-top: 10px;
-      width: 100%;
-      padding: 20px; /* Adjust the padding as desired */
-    }
-  /* Style for larger screens */
-  @media (min-width: 768px) {
-    .responsive-div {
-      margin: 100px;
-    }
+  form#contact-form button:hover {
+    background-color: #4771cb !important;
+    color: #fff !important;
+    border-bottom: 2px solid black !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
   }
 
-  /* Style for smaller screens */
-  @media (max-width: 767px) {
-    .responsive-div {
-      margin: 5px;
+  .contact-card a:hover img,
+  .contact-card a:hover span {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+  }
+
+  .contact-card {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .contact-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive Korrektur */
+  @media (max-width: 991.98px) {
+    .contact-card {
+      margin-top: 30px;
     }
   }
 </style>
-
 
 
   <!-- ***** Header Area Start ***** -->
@@ -130,7 +124,9 @@ https://templatemo.com/tm-563-seo-dream
                   <label for="message">Nachricht*</label>
                   <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button style="margin-top:20px" type="submit" class="btn btn-primary w-100">Nachricht senden</button>
+                <button style="margin-top:20px" type="submit" class="btn btn-primary w-100">
+                  📩 Nachricht senden
+                </button>
               </form>
               <p class="text-muted text-center mt-3" style="font-size: 0.9em;">
                 Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäß
@@ -141,15 +137,19 @@ https://templatemo.com/tm-563-seo-dream
   
           <!-- Kontakt-Icons -->
           <div class="col-lg-4 mt-5 mt-lg-5">
-            <div class="p-4 border rounded shadow-sm text-center">
+            <div class="contact-card p-4 border rounded text-center shadow-sm">
               <a href="https://wa.me/4368110869543?text=Hallo%2C%20ich%20habe%20eine%20Frage%20zu%20Ihren%20Leistungen." target="_blank">
                 <img src="assets/images/Digital_Glyph_Dark_Green.svg" style="height: 80px;" alt="WhatsApp Logo">
               </a>
               <a class="mt-3 d-block" target="_blank" href="https://wa.me/4368110869543?text=Hallo%2C%20ich%20habe%20eine%20Frage%20zu%20Ihren%20Leistungen.">
                 <p style="color:black; font-weight: 500;">Schreib uns direkt auf WhatsApp<br>+43 681 10869543</p>
               </a>
-              <a href="Terminbuchung.html" class="mt-4 d-block" style="font-size: 4em; text-decoration: none;">📅</a>
-              <a href="Terminbuchung.html"><p class="fw-bold mt-2">Direkt zur Terminbuchung</p></a>
+              <a href="Terminbuchung.html" class="mt-4 d-block" style="font-size: 4em; text-decoration: none;">
+                <span>📅</span>
+              </a>
+              <a href="Terminbuchung.html">
+                <p class="fw-bold mt-2">Direkt zur Terminbuchung</p>
+              </a>
             </div>
           </div>
         </div>
