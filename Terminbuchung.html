@@ -1,275 +1,217 @@
 <!DOCTYPE html>
 <html lang="de">
-
-  <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Automatische Terminbuchung für die Statistik Beratung und Statistik Nachhilfe">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-    <title>Statistik-Beratung - Terminbuchung</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <link rel="canonical" href="https://statuno.com/Terminbuchung.html">
-
-<!--
-
-TemplateMo 563 SEO Dream
-
-https://templatemo.com/tm-563-seo-dream
-
--->
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Statistik-Beratung - Terminbuchung</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
 </head>
 
 <style>
-    .big-calendar-icon {
-      font-size: 100px;
-    }
-    <style>
-    form#contact button:hover {
-      background-color: #4771cb!important;
-      color: #fff!important;
-      border-bottom: 2px solid black!important;
-    }
-    .framework {
-      background-color: white;
-      border: 1px solid #0059FF;
-      border-radius: 0px;
-      color: blueblack;
-      text-align: center;
-      margin-top: 10px;
-      width: 100%;
-      padding: 20px; /* Adjust the padding as desired */
-    }
-  </style>
+  body {
+    background-color: lightblue; /* Dein Hintergrund */
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /* Container für die Buchungsbox */
+  .booking-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px; /* Platz für Header */
+    padding-bottom: 50px;
+  }
+
+  .box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 800px; /* Breiter, damit Karten nebeneinander passen */
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+  }
+
+  /* Das Design der einzelnen Kacheln */
+  .pricing-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #fff;
+  }
+
+  /* Hover Effekt */
+  .pricing-card:hover {
+    border-color: #0059FF;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,89,255,0.15);
+  }
+
+  .duration {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .price {
+    font-size: 1.5rem;
+    color: #0059FF;
+    font-weight: 800;
+    margin: 10px 0;
+  }
+
+  .badge-free {
+    background-color: #28a745;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .btn-book {
+    background-color: #1338be;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+
+  .pricing-card:hover .btn-book {
+    background-color: #0059FF;
+  }
+
+  /* Header Fix (aus deinem Original) */
+  .header-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #fff; 
+  }
+</style>
+
 <body>
 
-
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
             <a href="https://www.statuno.com/" class="logo">
-              <h4>Statuno </h4>
+              <h4>Statuno</h4>
             </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="Team.html" >Team</a></li> 
-              <li class="scroll-to-section"><a href="Preise.html">Preise </a></li> 
-               <li class="scroll-to-section"><a href="Referenzen.html">Referenzen </a></li> 
-               <li class="scroll-to-section"><a href="Impressum.html">Impressum/Datenschutz </a></li>
-               <li class="scroll-to-section"><a href="Kontakt.html">Jetzt Anfragen</a></li> 
-               <li class="main-blue-button"><a href="Terminbuchung.html">Terminbuchung </a></li> 
- 
-             </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
+              <li class="scroll-to-section"><a href="Team.html">Team</a></li>
+              <li class="scroll-to-section"><a href="Preise.html">Preise</a></li>
+              <li class="scroll-to-section"><a href="Kontakt.html">Jetzt Anfragen</a></li>
+              <li class="main-blue-button"><a href="Terminbuchung.html">Terminbuchung</a></li>
+            </ul>
+            <a class='menu-trigger'><span>Menu</span></a>
           </nav>
         </div>
       </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
-  <style>
-    body {
-      background-color: lightblue;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      height: 120vh;
-      margin: 0;
-    }
-  
-    .box {
-      margin-top: 50px;
-      margin-bottom: 20px;
-      background-color: #ffffff;
-      border: 1px solid #e0e0e0;
-      border-radius: 4px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: 400px;
-    }
-  
-    h2 {
-      text-align: center;
-      margin-top: 0;
-    }
-  
-    .box h4 {
-      margin: 10px 0;
-    }
-  
-    select {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #e0e0e0;
-      border-radius: 4px;
-      background-color: #f9f9f9;
-      font-size: 14px;
-    }
-  
-    #selectedTime {
-      text-align: center;
-      font-size: 18px;
-      font-weight: bold;
-    }
-  
-    .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .calendly-button {
-    display: inline-block;
-    text-align: center; /* Add this line to center the button horizontally */
-  }
-  
-  .calendly-button a {
-    display: inline-block;
-    background-color: #1338be;
-    font-size: 15px;
-    font-weight: 400;
-    color: #fff !important;
-    text-transform: capitalize;
-    padding: 12px 25px;
-    border-radius: 23px;
-    letter-spacing: 0.25px;
-    transition: all .3s;
-  }
-  
-  .calendly-button a:hover {
-    background-color: darkblue!important;
-    color: white!important;
-  }</style>
-  
-  <body>
-    <div class="box" style="margin-top:150px">
-      <h2><strong><span class="calendar-symbol">📅</span> Terminbuchung</strong></h2>
-      <br>
+  <div class="booking-wrapper">
+    <div class="box">
+      <h2><span style="font-size: 40px;">📅</span> Wähle deinen Termin</h2>
+      
+      <div class="row">
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="pricing-card" data-cal-link="https://cal.com/thomas-zwanowetz-sgddi4/erstgespraech" data-cal-config='{"layout":"month_view"}'>
+            <div>
+              <span class="badge-free">Kostenloses</span>
+              <div class="duration">Erstgespräch</div>
+              <div class="text-muted small">15 Minuten</div>
+            </div>
+            <div>
+              <div class="price">0 €</div>
+              <button class="btn-book">Buchen</button>
+            </div>
+          </div>
+        </div>
 
-      <div>
-        <h4>Zeitdauer</h4>
-        <select id="select-button1" onchange="updateTime()">
-          <option value="1">Erstgespräch 15min</option>
-          <option value="2">30min</option>
-          <option value="3">45min</option>
-          <option value="4" selected>1h</option>
-          <option value="5">1.5h</option>
-          <option value="6">2h</option>
-          <option value="7">3h</option>
-        </select>
-      </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="pricing-card" data-cal-link="https://cal.com/thomas-zwanowetz-sgddi4/1h" data-cal-config='{"layout":"month_view"}'>
+            <div>
+              <div class="duration">Statistik Beratung</div>
+              <div class="text-muted small">60 Minuten</div>
+            </div>
+            <div>
+              <div class="price">75 €</div>
+              <button class="btn-book">Buchen</button>
+            </div>
+          </div>
+        </div>
 
-      <div>
-        <h4>Preis</h4>
-        <div id="selectedTime">75 Euro</div>
-      </div>
-<!-- Calendly Link-Widget Begin -->
-<br>
-<div id = 'container1' class="button-container" style="display:none">
- <div  class="main-blue-button"> <a  id = 'calendly-button' href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/statuno/kostenloses-erstgesprach'}); return false;">Bestätigen und zur Terminauswahl</a></div>
-</div><!-- Calendly Link-Widget End -->
-<!-- Calendly Link-Widget Begin -->
-<div id = 'container2' class="button-container" style="display:none">
- <div  class="main-blue-button"> <a  id = 'calendly-button' href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/statuno/statistik-beratung-30min'}); return false;">Bestätigen und zur Terminauswahl</a></div>
-</div><!-- Calendly Link-Widget End -->
-<div id = 'container3' class="button-container" style="display:none">
-  <div  class="main-blue-button"> <a  id = 'calendly-button' href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/statuno/statistik-beratung-45min'}); return false;">Bestätigen und zur Terminauswahl</a></div>
- </div><!-- Calendly Link-Widget End -->
- <!-- Calendly Link-Widget Begin -->
- <div id = 'container4' class="button-container" style="display:none">
-  <div  class="main-blue-button"> <a  id = 'calendly-button' href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/statuno/statistik-beratung-1h'}); return false;">Bestätigen und zur Terminauswahl</a></div>
- </div><!-- Calendly Link-Widget End -->
- <div id = 'container5' class="button-container" style="display:none">
-  <div  class="main-blue-button"> <a  id = 'calendly-button' href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/statuno/statistik-beratung-1-5h'}); return false;">Bestätigen und zur Terminauswahl</a></div>
- </div><!-- Calendly Link-Widget End -->
- <!-- Calendly Link-Widget Begin -->
- <div id = 'container6' class="button-container" style="display:none">
-  <div  class="main-blue-button"> <a  id = 'calendly-button' href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/statuno/statistik-beratung-2h'}); return false;">Bestätigen und zur Terminauswahl</a></div>
- </div><!-- Calendly Link-Widget End -->
- <div id = 'container7' class="button-container" style="display:none">
-  <div  class="main-blue-button"> <a  id = 'calendly-button' href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/statuno/statistik-beratung-3h'}); return false;">Bestätigen und zur Terminauswahl</a></div>
- </div><!-- Calendly Link-Widget End -->
-</div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="pricing-card" data-cal-link="https://cal.com/thomas-zwanowetz-sgddi4/90min" data-cal-config='{"layout":"month_view"}'>
+            <div>
+              <div class="duration">Statistik Beratung</div>
+              <div class="text-muted small">90 Minuten</div>
+            </div>
+            <div>
+              <div class="price">110 €</div>
+              <button class="btn-book">Buchen</button>
+            </div>
+          </div>
+        </div>
 
- 
-  </body>
-  
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="pricing-card" data-cal-link="https://cal.com/thomas-zwanowetz-sgddi4/statistik-beratung-2h" data-cal-config='{"layout":"month_view"}'>
+            <div>
+              <div class="duration">Statistik Beratung</div>
+              <div class="text-muted small">120 Minuten</div>
+            </div>
+            <div>
+              <div class="price">140 €</div>
+              <button class="btn-book">Buchen</button>
+            </div>
+          </div>
+        </div>
 
-  <!-- Scripts -->
+      </div> <p class="text-center text-muted mt-3">
+        <small>Alle Termine finden via Zoom statt.</small>
+      </p>
+
+    </div>
+  </div>
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<script>
-    function updateTime() {
-      var selectElement = document.getElementById("select-button1");
-      var selectedValue = selectElement.value; // Das ist 1-7
-      var price = 0;
-      
-      // 'selectedValue' wird jetzt direkt als Index für den Container (1-7) verwendet,
-      // da dies die "Später zahlen"-Optionen sind (Container 1-7).
-      
-      if (selectedValue === "1") {
-        price = 0; // Erstgespräch 15 min
-      } else if (selectedValue === "2") {
-        price = 42; // 30 min
-      } else if (selectedValue === "3") {
-        price = 59; // 45 min
-      } else if (selectedValue === "4") {
-        price = 75; // 1h
-      } else if (selectedValue === "5") {
-        price = 109; // 1.5h
-      } else if (selectedValue === "6") {
-        price = 139; // 2h
-      } else if (selectedValue === "7") {
-        price = 199; // 3h
-      }
 
-      // Preis anzeigen
-      var price_ = Math.round(price);
-      document.getElementById("selectedTime").innerHTML = price_ + " Euro";
-
-      // Alle Button-Container verstecken
-      const linkButtonContainers = document.getElementsByClassName('button-container');
-      for (let i = 0; i < linkButtonContainers.length; i++) {
-        linkButtonContainers[i].style.display = 'none';
-      }
-
-      // Nur den richtigen Container anzeigen (Container 1-7)
-      const selectedContainer = document.getElementById(`container${selectedValue}`);
-      selectedContainer.style.display = 'flex';
-    }
-
-    // Ruft updateTime() beim Laden der Seite auf.
-    // Das sorgt dafür, dass sofort der korrekte Preis (75 Euro) und 
-    // der korrekte Button (container4) für die Standardauswahl "1h" angezeigt werden.
-    window.onload = updateTime;
-
+  <script>
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === "init") { let api = function () { p(api, arguments); }; let namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, arguments) : p(cal, arguments); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", {origin:"https://cal.com"});
+  Cal("ui", {"styles":{"branding":{"brandColor":"#0059FF"}},"hideEventTypeDetails":false,"layout":"month_view"});
   </script>
+
 </body>
 </html>
